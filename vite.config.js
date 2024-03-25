@@ -7,5 +7,5 @@ export default defineConfig({
   resolve: {
     alias: [{ find: "@", replacement: "/src" }],
   },
-  base:'/iqMinds/'
+  base:'/IQ-MINDS/'
 });
