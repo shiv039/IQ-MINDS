@@ -1,13 +1,10 @@
 {
-  "homepage": "https://shiv039.github.io/iqminds",
   "name": "iqminds",
   "private": true,
   "version": "2.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "deploy": "vite build && gh-pages -d dist",
-    "predeploy": "rd /s /q dist",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -24,7 +21,6 @@
     "@types/react-dom": "18.2.14",
     "@vitejs/plugin-react": "4.1.0",
     "autoprefixer": "10.4.16",
-    "gh-pages": "^6.1.1",
     "postcss": "8.4.31",
     "prettier-plugin-tailwindcss": "0.5.6",
     "tailwindcss": "3.3.4",
