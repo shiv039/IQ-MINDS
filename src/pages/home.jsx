@@ -167,7 +167,7 @@ export function Home() {
           <PageTitle section="Our Mission"></PageTitle>
           <div className="mx-auto mt-20 grid max-w-5xl grid-cols-1 gap-16 ">
             <Typography className="font-normal text-blue-gray-500">
-              At IQ Minds, we are driven by a singular mission: to provide a
+              At Ultra Minds, we are driven by a singular mission: to provide a
               dynamic and nurturing learning environment where every child can
               unleash their full potential, cultivate their passions, and
               develop the skills they need to thrive in an ever-changing world.
