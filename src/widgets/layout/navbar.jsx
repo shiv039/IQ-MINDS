@@ -1,24 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 import {
   Navbar as MTNavbar,
   MobileNav,
   Typography,
   Button,
   IconButton,
-} from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+} from '@material-tailwind/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export function Navbar({ brandName, routes, action }) {
-  const [openNav, setOpenNav] = React.useState(false);
+  const [openNav, setOpenNav] = React.useState(false)
 
   React.useEffect(() => {
     window.addEventListener(
-      "resize",
+      'resize',
       () => window.innerWidth >= 960 && setOpenNav(false)
-    );
-  }, []);
+    )
+  }, [])
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
@@ -38,7 +38,7 @@ export function Navbar({ brandName, routes, action }) {
             >
               {icon &&
                 React.createElement(icon, {
-                  className: "w-[18px] h-[18px] opacity-75 mr-1",
+                  className: 'w-[18px] h-[18px] opacity-75 mr-1',
                 })}
               {name}
             </a>
@@ -50,7 +50,7 @@ export function Navbar({ brandName, routes, action }) {
             >
               {icon &&
                 React.createElement(icon, {
-                  className: "w-[18px] h-[18px] opacity-75 mr-1",
+                  className: 'w-[18px] h-[18px] opacity-75 mr-1',
                 })}
               {name}
             </Link>
@@ -58,7 +58,7 @@ export function Navbar({ brandName, routes, action }) {
         </Typography>
       ))}
     </ul>
-  );
+  )
 
   return (
     <MTNavbar color="transparent" className="p-3">
@@ -69,7 +69,7 @@ export function Navbar({ brandName, routes, action }) {
           </Typography>
         </Link>
         <div className="hidden lg:block">{navList}</div>
-       
+
         <IconButton
           variant="text"
           size="sm"
@@ -90,35 +90,32 @@ export function Navbar({ brandName, routes, action }) {
       >
         <div className="container mx-auto">
           {navList}
-          
-          {React.cloneElement(action, 
-          {
 
-            className: "w-full block",
+          {React.cloneElement(action, {
+            className: 'w-full block',
           })}
         </div>
       </MobileNav>
     </MTNavbar>
-  );
+  )
 }
 
 Navbar.defaultProps = {
-  brandName: "IQ Minds",
+  brandName: 'Ultra Minds',
   action: (
     <a
       href="https://www.creative-tim.com/product/material-tailwind-kit-react"
       target="_blank"
-    >
-    </a>
+    ></a>
   ),
-};
+}
 
 Navbar.propTypes = {
   brandName: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
   action: PropTypes.node,
-};
+}
 
-Navbar.displayName = "/src/widgets/layout/navbar.jsx";
+Navbar.displayName = '/src/widgets/layout/navbar.jsx'
 
-export default Navbar;
+export default Navbar

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   Card,
   CardBody,
@@ -9,11 +9,11 @@ import {
   // Input,
   // Textarea,
   // Checkbox,
-} from '@material-tailwind/react';
+} from '@material-tailwind/react'
 // import { FingerPrintIcon, UsersIcon } from '@heroicons/react/24/solid';
-import { PageTitle, Footer } from '@/widgets/layout';
+import { PageTitle, Footer } from '@/widgets/layout'
 // import { FeatureCard, TeamCard } from '@/widgets/cards';
-import { featuresData, teamData, contactData } from '@/data';
+import { featuresData, teamData, contactData } from '@/data'
 
 export function Home() {
   return (
@@ -58,8 +58,8 @@ export function Home() {
             <div className=" mt-20 flex flex-wrap items-center">
               <div className="mx-auto w-full px-4 md:w-5/12">
                 <Typography className="mb-8 font-normal text-blue-gray-500">
-                  Welcome to IQMinds Polska, where young minds embark on a
-                  journey of discovery and innovation! At IQMinds Polska, we
+                  Welcome to Ultra Minds Polska, where young minds embark on a
+                  journey of discovery and innovation! At Ultra Minds Polska, we
                   believe in nurturing the next generation of innovators,
                   problem solvers, leaders and certainly great human beings.
                   <br />
@@ -187,28 +187,11 @@ export function Home() {
               and dedication.
               <br />
               <br />
-              <span className="font-bold">Building Resilience: </span>In today's
-              rapidly evolving world, resilience is key to navigating challenges
-              and seizing opportunities. Through our supportive learning
-              environment and engaging curriculum, we instill in our students
-              the resilience and adaptability they need to thrive in any
-              situation.
-              <br />
-              <br />
               <span className="font-bold">Preparing for the Future: </span>The
               world of tomorrow requires a new set of skills and competencies.
               Our mission is to equip our students with the knowledge, critical
               thinking abilities, and technological proficiency they need to
               succeed in the 21st century and beyond.
-              <br />
-              <br />
-              <span className="font-bold">
-                Promoting Diversity and Inclusivity:{' '}
-              </span>
-              Diversity is our strength, and inclusivity is our commitment. We
-              celebrate the rich tapestry of backgrounds, cultures, and
-              perspectives within our community, fostering an environment of
-              mutual respect, understanding, and collaboration.
               <br />
               <br />
               <span className="font-bold">
@@ -219,13 +202,6 @@ export function Home() {
               support the holistic development of each child, fostering a strong
               sense of partnership and collaboration in their educational
               journey.
-              <br />
-              <br />
-              <span className="font-bold">Making a Difference: </span>
-              Ultimately, our mission is about making a difference in the lives
-              of our students and in the world around us. We strive to empower
-              future leaders, innovators, and changemakers who will make a
-              positive impact on their communities and beyond.
               <br />
               <br />
               Join us in our mission to inspire, empower, and transform lives.
@@ -270,7 +246,7 @@ export function Home() {
         <Footer />
       </div>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home

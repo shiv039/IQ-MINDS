@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
-import { Typography, IconButton } from '@material-tailwind/react';
+import PropTypes from 'prop-types'
+import { Typography, IconButton } from '@material-tailwind/react'
 
-const year = new Date().getFullYear();
+const year = new Date().getFullYear()
 
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
@@ -41,7 +41,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
 Footer.defaultProps = {
@@ -63,8 +63,8 @@ Footer.defaultProps = {
     },
   ],
 
-  copyright: <>Copyright © {year} IQ Minds by </>,
-};
+  copyright: <>Copyright © {year} Ultra Minds by </>,
+}
 
 Footer.propTypes = {
   title: PropTypes.string,
@@ -72,8 +72,8 @@ Footer.propTypes = {
   socials: PropTypes.arrayOf(PropTypes.object),
   menus: PropTypes.arrayOf(PropTypes.object),
   copyright: PropTypes.node,
-};
+}
 
-Footer.displayName = '/src/widgets/layout/footer.jsx';
+Footer.displayName = '/src/widgets/layout/footer.jsx'
 
-export default Footer;
+export default Footer
